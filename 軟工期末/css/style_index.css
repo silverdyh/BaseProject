@@ -1,11 +1,25 @@
 .title {
-    padding:20px;
-    margin-top:0;
-    background-color: pink;
+    padding: 20px;
+    background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
+  }
+  .title h1 {
+    font-family: '微軟正黑體', 'arial black', sans-serif;
+    color: lightseagreen;
+    text-align: center;
+    background-color: lightyellow;
+    margin: 5px 5px 5px 5px;
+    font-size: 50px;
+    border-radius: 10px;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    2px 2px 2px black;
   }
   
   body {
@@ -42,35 +56,4 @@
   
   .title_active {
     background-color: tomato;
-  }
-
-  #img {
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    width: 1150px;
-    height: auto;
-    height: 400px;
-    top: 150px;
-    background-color: white;
-  }
-
-  #link {
-    top: 80px;
-    width:400px;
-    height: 500px;
-    margin: auto;
-    padding: auto;
-  }
-
-  #img_text {
-    display: table;
-    width: 100px;
-    border:blue 1px solid;
-    float:left;
-    margin-top: 200px;
-    font-weight: 900;
-    font-size: large;
-    color: red;
-    margin-left: 190px;
   }
