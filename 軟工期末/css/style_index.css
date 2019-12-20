@@ -1,18 +1,11 @@
 .title {
     padding:20px;
     margin-top:0;
-    background-color:whitesmoke;
+    background-color: pink;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
-    
-  }
-
-  .title h1{
-    font-weight: 900;
-    font-size: 7;
-    color:navy;
   }
   
   body {
@@ -49,4 +42,35 @@
   
   .title_active {
     background-color: tomato;
+  }
+
+  #img {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    width: 1150px;
+    height: auto;
+    height: 400px;
+    top: 150px;
+    background-color: white;
+  }
+
+  #link {
+    top: 80px;
+    width:400px;
+    height: 500px;
+    margin: auto;
+    padding: auto;
+  }
+
+  #img_text {
+    display: table;
+    width: 100px;
+    border:blue 1px solid;
+    float:left;
+    margin-top: 200px;
+    font-weight: 900;
+    font-size: large;
+    color: red;
+    margin-left: 190px;
   }
