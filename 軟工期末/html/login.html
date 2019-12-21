@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../css/style_login.css">
+    <script>
+      function error() {
+        let t = document.getElementById("pwd").value;
+        let s = document.getElementById("account").value;
+          if(s == "") {
+            document.getElementById('error-alert_1').innerHTML = "請輸入帳號";
+            return(false);
+          }
+          if (t == "") {
+            document.getElementById('error-alert_2').innerHTML = "請輸入密碼";
+            return(false);
+        }
+      }
+    </script>
+</head>
+
+<body>
+    <div class="title">
+        <div>
+            <h1>CODER</h1>
+         </div>
+    </div>
+    <form class="login" action="sec.html">
+        <div class="form-group">
+          <label for="account">帳號</label>
+          <input type="account" class="form-control" id="account" placeholder="輸入帳號">
+          <small id="error_alert_1" style="color: red;"></small>
+        </div>
+    
+        <div class="form-group">
+          <label for="pwd">密碼</label>
+          <input type="password" class="form-control" id="pwd" placeholder="輸入密碼">
+          <small id="error_alert_2" style="color: red;"></small>
+        </div>
+    
+        <div style="text-align: center"><button id="button" type="submit" onclick="error()">Login</button></div>
+    </form>
+
+    <ul>
+      <li><a  href="index.html">Home</a></li>
+      <li><a  href="news.html">News</a></li>
+      <li><a  href="image.html">image</a></li>
+      <li><a  href="video.html">video</a></li>
+      <li style="float: right"><a class="title_active" href="Login.html">Login</a></li>
+  </ul>
+
+</body>
+
+</html>
