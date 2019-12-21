@@ -15,7 +15,7 @@
    
 </head>
 
-<body style="background-color: rgb(233, 233, 233);">  
+<body style="background-color: rgb(233, 233, 233); height: 1500px;">  
     <div class="title">
         <div>
             <h1>CODER</h1>
@@ -30,7 +30,7 @@
         <li style="float: right"><a href="Login.html">Login</a></li>
     </ul>
 
-    <div id="img_text1" style="width: 1170px; height: 1100px; background-color: white;" >
+    <div id="img_text1" style="width: 1170px; height: 650px; background-color: white;" >
         <div class="name">
             <div>
                 <h3>Count the factors</h3>
@@ -72,12 +72,28 @@
                             <td class="des1" style="margin: 360px 1px 1px 30px;"><h3>Sample Input 1</h3></td>
                             <td class="des1" style="margin: 360px 1px 1px 560px;"><h3>Sample Output 1</h3></td>
                         </tr>
+                        <tr>
+                            <td class="des2" style="margin: 430px 1px 1px 50px;"><h4>7</h4><h4>8</h4><h4>45</h4><h4>0</h4></td>
+                            <td class="des2" style="margin: 430px 1px 1px 580px;"><h4>7 : 1</h4><h4>8 : 1</h4><h4>45 : 2</h4></td>
+                        </tr>
                     </table>
                 </td>
             </tr>
         </div>    
     </div>
-    <div id="img_text2" style="width: 270px; height: 500px; background-color: white;" ></div>
+    <div id="img_text2" style="width: 270px; height: 500px; background-color: white; fixed;right: 0;" ></div>
+    <div id="img_text3" style="width: 1170px; height: 600px; background-color: white;" >
+        <form action="result.php" method="post" style="margin: 40px 1px 1px 50px; font-family: '微軟正黑體', 'arial black', sans-serif;">
+            Lguage  <select name="Lguage">
+            <option value="1">C</option>
+            <option value="2">C++</option>
+            <option value="3">Java</option>
+            <option value="4">Python</option></select>
+            <textarea style="width: 1000px; height: 400px; margin: 30px 10px 10px 30px;" name="Program">請輸入程式碼</textarea>
+            <input type="submit" name="SB" value="submit" style="margin: 10px 1px 10px 910px;
+                background-color: darkorange; color: white; width:120px;height:40px;">
+        </form>
+    </div>
 
 </body>
 

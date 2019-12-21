@@ -15,6 +15,7 @@
   font-weight: 900;
   font-size: large;
   margin-left: 30px;
+  position: fixed;
 }
 
 #img_text2 {
