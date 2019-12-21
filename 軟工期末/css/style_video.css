@@ -49,4 +49,8 @@ body {
   .active {
     background-color: tomato;
   }
-  
+
+  #video {
+    position: absolute;
+    top: 300px;
+  }
