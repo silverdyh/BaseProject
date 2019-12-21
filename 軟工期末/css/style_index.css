@@ -23,7 +23,8 @@
   }
   
   body {
-    margin:0;
+    margin: 0;
+    background-color: gray;
   }
   
   ul {
@@ -56,4 +57,16 @@
   
   .title_active {
     background-color: tomato;
+  }
+
+  #img_text {
+    display: table;
+    width: 100px;
+    border: blue 1px solid;
+    float: left;
+    margin-top: 200px;
+    font-weight: 900;
+    font-size: large;
+    color: red;
+    margin-left: 190px;
   }

@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int main()
+{
+	while(1){
+		long long int n;
+		scanf("%d", &n);
+		if(n==0)break;
+		
+		int arr[100000];
+		long long int j=n, a=0, i;
+		for(i=2;i<=j;){
+			if(j%i==0){
+				if(arr[a-1]!=i){
+					arr[a]=i;
+					a++;
+				}
+				j=j/i;
+			}
+			else{
+				i++;
+			}
+		}
+		
+		printf("%lld : %lld\n", n, a);
+	}
+	return 0;
+} 
