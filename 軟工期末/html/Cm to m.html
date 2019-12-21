@@ -15,7 +15,7 @@
    
 </head>
 
-<body style="background-color: rgb(233, 233, 233); height: 1500px;">  
+<body style="background-color: rgb(233, 233, 233); height: 1390px;">  
     <div class="title">
         <div>
             <h1>CODER</h1>
@@ -78,7 +78,7 @@
             </tr>
         </div>    
     </div>
-    <div id="img_text2" style="width: 270px; height: 500px; background-color: white; fixed;right: 0;" ></div>
+    <div id="img_text2" style="width: 270px; height: 500px; background-color: white; position: fixed; right: 0;" ></div>
     <div id="img_text3" style="width: 1170px; height: 600px; background-color: white;" >
         <form action="result.php" method="post" style="margin: 40px 1px 1px 50px; font-family: '微軟正黑體', 'arial black', sans-serif;">
             Lguage  <select name="Lguage">
@@ -87,8 +87,12 @@
             <option value="3">Java</option>
             <option value="4">Python</option></select>
             <textarea style="width: 1000px; height: 400px; margin: 30px 10px 10px 30px;" name="Program">請輸入程式碼</textarea>
-            <input type="submit" name="SB" value="submit" style="margin: 10px 1px 10px 910px;
-                background-color: darkorange; color: white; width:120px;height:40px;">
+            <table><tr>
+                <td><input type="submit" name="ans" value="answer" style="margin: 10px 0px 0px 30px;
+                background-color: red; color: white; width:120px; height:40px;"></td>
+                <td><input type="submit" name="SB" value="submit" style="margin: 10px 0px 0px 760px;
+                background-color: darkorange; color: white; width:120px; height: 40px;"></td>
+            </tr></table>
         </form>
     </div>
 
