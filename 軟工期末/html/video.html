@@ -12,6 +12,7 @@
 
     <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
     <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
    
 </head>
 
@@ -67,8 +68,19 @@
                 </div>
             </div>
         </div>
-        
     </div>
+    <div id="popWindow"><button>x</button></div>
+    <script type="text/javascript">
+        function centerHandler(){
+        var scrollDist=$(window).scrollTop();
+        var myTop=($(window).height()-$("#popWindow").height())/2+scrollDist;
+        var myLeft=($(window).width()-$("#popWindow").width())/2;
+        $("#popWindow").offset({top:myTop,left:myLeft});
+        }
+        centerHandler ();
+        $(window).scroll(centerHandler);
+        $(window).resize(centerHandler);
+        </script>
 </body>
 
 </html>
