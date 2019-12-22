@@ -15,16 +15,15 @@
     <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
     <script type="text/javascript">
         function centerHandler(){
-        var scrollDist=$(window).scrollTop();
-        var myTop=($(window).height()-$("#popWindow").height())/2+scrollDist;
-        var myLeft=($(window).width()-$("#popWindow").width())/2;
-        $("#popWindow").offset({top:myTop,left:myLeft});
+            var scrollDist=$(window).scrollTop();
+            var myTop=($(window).height()-$("#popWindow").height())/2+scrollDist;
+            var myLeft=($(window).width()-$("#popWindow").width())/2;
+            $("#popWindow").offset({top:myTop,left:myLeft});
         }
         centerHandler ();
         $(window).scroll(centerHandler);
         $(window).resize(centerHandler);
     </script>
-
 
 </head>
 
@@ -80,7 +79,7 @@
                 </div>
             </div>
         </div>
-    <div id="popWindow">    
+    <div id="popWindow">  
         <button type="button" onclick="document.getElementById('popWindow').style.display='none'">x</button>
     </div>
     

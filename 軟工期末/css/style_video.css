@@ -1,14 +1,3 @@
-body {
-    margin: 10;
-    padding: 10;
-  }
-  
-  #item-table {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-  }
-  
   .video {
     width: 300px;
     height: 200px;
@@ -23,7 +12,7 @@ body {
   #popWindow{
     width:1200px;
     height:700px;
-    background:url(../img/cyQza8r.png) no-repeat;
+    background:url(../img/2.png) no-repeat;
     background-size: cover;
     box-shadow:5px 5px 10px black; 
     border:2px gray solid; 
