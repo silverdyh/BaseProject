@@ -25,6 +25,13 @@
         $(window).resize(centerHandler);
     </script>
 
+    <script type="text/javascript">
+        function pay() {
+            document.getElementById('popWindow').style.display='none';
+            window.open('pay.html');
+        }
+    </script>
+
 </head>
 
 <body style="background-color: rgb(233, 233, 233);">  
@@ -80,7 +87,7 @@
             </div>
         </div>
     <div id="popWindow">  
-        <button type="button" onclick="document.getElementById('popWindow').style.display='none'">x</button>
+        <button type="button" onclick="pay()">x</button>
     </div>
     
         
