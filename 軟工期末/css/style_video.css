@@ -1,32 +1,21 @@
-body {
-    margin: 10;
-    padding: 10;
-  }
-  
-  #item-table {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-  }
-  
   .video {
     width: 300px;
     height: 200px;
     padding: 20px;
   }
 
-  div h1 {
+  div div h1 {
     font-family: '微軟正黑體', 'arial black', sans-serif;
     font-weight: bold;
   }
 
   #popWindow{
-    width:1200px;
-    height:700px;
-    background:url(../img/cyQza8r.png) no-repeat;
+    width:1000px;
+    height:600px;
+    background:url(../img/2.png) no-repeat;
     background-size: cover;
     box-shadow:5px 5px 10px black; 
-    border:2px gray solid; 
+    border:1px gray solid; 
     border-radius:20px; 
     position:fixed;
     z-index: 3;

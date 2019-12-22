@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../css/style_index.css">
     <link rel="stylesheet" type="text/css" href="../css/style_login.css">
     <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
 
@@ -23,18 +22,16 @@
           if (t == "") {
             document.getElementById('error-alert_2').innerHTML = "請輸入密碼";
             return(false);
-        }
+         }
+          if (s != "" && t != "") {
+            window.alert('登入成功');
+            window.location.href='index.html';
+          }
       }
     </script>
 </head>
 
 <body>
-    <div class="title">
-        <div>
-            <h1>CODER</h1>
-         </div>
-    </div>
-
     <ul>
         <li><a  href="index.html">Home</a></li>
         <li><a  href="video.html">Video</a></li>
@@ -56,7 +53,7 @@
           <small id="error_alert_2" style="color: red;"></small>
         </div>
     
-        <div style="text-align: center"><button id="button" type="submit" onclick="error()">Login</button></div>
+        <div style="text-align: center"><button id="button" type="button" onclick="error()">Login</button></div>
     </form>
 
 </body>
