@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>首頁</title>
+    <title>教學區</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,19 @@
     <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
     <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
-   
+    <script type="text/javascript">
+        function centerHandler(){
+        var scrollDist=$(window).scrollTop();
+        var myTop=($(window).height()-$("#popWindow").height())/2+scrollDist;
+        var myLeft=($(window).width()-$("#popWindow").width())/2;
+        $("#popWindow").offset({top:myTop,left:myLeft});
+        }
+        centerHandler ();
+        $(window).scroll(centerHandler);
+        $(window).resize(centerHandler);
+    </script>
+
+
 </head>
 
 <body style="background-color: rgb(233, 233, 233);">  
@@ -68,19 +80,11 @@
                 </div>
             </div>
         </div>
+    <div id="popWindow">    
+        <button type="button" onclick="document.getElementById('popWindow').style.display='none'">x</button>
     </div>
-    <div id="popWindow"><button>x</button></div>
-    <script type="text/javascript">
-        function centerHandler(){
-        var scrollDist=$(window).scrollTop();
-        var myTop=($(window).height()-$("#popWindow").height())/2+scrollDist;
-        var myLeft=($(window).width()-$("#popWindow").width())/2;
-        $("#popWindow").offset({top:myTop,left:myLeft});
-        }
-        centerHandler ();
-        $(window).scroll(centerHandler);
-        $(window).resize(centerHandler);
-        </script>
+    
+        
 </body>
 
 </html>
