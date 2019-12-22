@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main()
+{
+	int n;
+	double m;
+	scanf("%d", &n);
+	m=n/100.00;
+	printf("%.2fm\n", m);
+} 
