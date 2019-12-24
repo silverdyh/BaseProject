@@ -16,12 +16,16 @@
         let t = document.getElementById("pwd").value;
         let s = document.getElementById("account").value;
           if(s == "") {
-            document.getElementById('error-alert_1').innerHTML = "請輸入帳號";
-            return(false);
+            document.getElementById('error_alert_1').innerHTML = "請輸入帳號";
+          }
+          else if(s != ""){
+            document.getElementById('error_alert_1').innerHTML = "";
           }
           if (t == "") {
-            document.getElementById('error-alert_2').innerHTML = "請輸入密碼";
-            return(false);
+            document.getElementById('error_alert_2').innerHTML = "請輸入密碼";
+         }
+         else if (t != "") {
+            document.getElementById('error_alert_2').innerHTML = "";
          }
           if (s != "" && t != "") {
             window.alert('登入成功');

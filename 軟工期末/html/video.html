@@ -13,6 +13,7 @@
     <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
     <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+
     <script type="text/javascript">
         function centerHandler(){
             var scrollDist=$(window).scrollTop();
@@ -26,7 +27,8 @@
     </script>
 
     <script type="text/javascript">
-        function pay() {
+        function pay_for_disappear() {
+            window.alert('您需要付費才能消除廣告');
             document.getElementById('popWindow').style.display='none';
             window.open('pay.html');
         }
@@ -50,9 +52,9 @@
     </ul>
 
     <div  class="container" style="position: relative;top: 170px;width: 1458px;height: 1000px; background-color: white;">
-        <div style="position: relative;left: 100px;top: 20px;">
-            <h1>基礎課程</h1><br>
-            <div>
+        <div style="position: relative;left: 100px;top: 50px;width: 1200px;">
+            
+            <div><h1>基礎課程</h1><br>
                 <div class="row">
                     <div class="col-sm-3">
                         <iframe class="video" src="https://www.youtube.com/embed/vLnPwxZdW4Y?start=211" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
@@ -87,7 +89,7 @@
             </div>
         </div>
     <div id="popWindow">  
-        <button type="button" onclick="pay()">x</button>
+        <button type="button" onclick="pay_for_disappear()">x</button>
     </div>
     
         
