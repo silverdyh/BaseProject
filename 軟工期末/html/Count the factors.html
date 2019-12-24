@@ -25,7 +25,7 @@
     <ul>
         <li><a  href="index.html">Home</a></li>
         <li><a  href="video.html">Video</a></li>
-        <li><a class="title_active" href="exam.html">Exam</a></li>
+        <li><a class="title_active" href="exam2.html">Exam</a></li>
         <li><a  href="Q&A.html">Q & A</a></li>
         <li style="float: right"><a href="Login.html">Login</a></li>
     </ul>
@@ -91,7 +91,31 @@
             </tr>
         </div>    
     </div>
-    <div id="img_text2" style="width: 270px; height: 500px; background-color: white; position: fixed; right: 0;" ></div>
+    <div id="img_text2" style="width: 270px; height: 500px; background-color: white; position: fixed; right: 0;" >
+        <div class="container">
+            <tr>
+                <td>
+                    <table width="100%" border="0">
+                        <tr><td class="des2" style="margin: 30px 1px 1px 50px;">
+                            <img src="../img/01.jpg" style="width: 150px; height: 150px; margin: 10px; padding: 10px; border: 1px gray solid;"/>
+                        </td></tr>
+                        <tr>
+                            <td class="des2" style="margin: 200px 1px 1px 40px;"><h4>姓名</h4></td>
+                            <td class="des2" style="margin: 200px 1px 1px 140px;"><h4>王小明</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="des2" style="margin: 240px 1px 1px 40px;"><h4>ID</h4></td>
+                            <td class="des2" style="margin: 240px 1px 1px 140px;"><h4>XXXXXXXX</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="des2" style="margin: 280px 1px 1px 40px;"><h4>擁有積分</h4></td>
+                            <td class="des2" style="margin: 280px 1px 1px 140px;"><h4>3</h4></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </div>
+    </div>
     <div id="img_text3" style="width: 1170px; height: 600px; background-color: white;" >
         <form action="result.php" method="post" style="margin: 40px 1px 1px 50px; font-family: '微軟正黑體', 'arial black', sans-serif;">
             Lguage  <select name="Lguage">
@@ -104,8 +128,14 @@
             <table><tr>
                 <td><input type="button" value="Answer" onclick="location.href='ansm1.html'" style="margin: 10px 0px 0px 30px;
                 background-color: red; color: white; width:120px; height:40px;"></td>
-                <td><input type="submit" name="SB" value="submit" style="margin: 10px 0px 0px 760px;
-                background-color: darkorange; color: white; width:120px; height: 40px;"></td>
+                <td><script language="javascript">
+                    function ShowAnswer() {
+                    　alert("CORRECT");
+                      window.location.href='exam3.html';
+                    }
+                    </script>
+                    <button onclick="ShowAnswer()" type="button" style="margin: 10px 0px 0px 760px;
+                    background-color: darkorange; color: white; width:120px; height: 40px;">submit</button></td>
             </tr></table>
         </form>
     </div>

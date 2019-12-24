@@ -2,11 +2,12 @@
 <html>
 
 <head>
-    <title>算質因數</title>
+    <title>測驗</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/style_index.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_exam.css">
     <link rel="stylesheet" type="text/css" href="../css/style_exam1.css">
     <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
 
@@ -15,7 +16,7 @@
    
 </head>
 
-<body style="background-color: rgb(233, 233, 233); height: 1310px;">  
+<body style="background-color: rgb(233, 233, 233);">  
     <div class="title">
         <div>
             <h1>CODER</h1>
@@ -30,54 +31,48 @@
         <li style="float: right"><a href="Login.html">Login</a></li>
     </ul>
 
-    <div id="img_text1" style="width: 1170px; height: 1050px; background-color: white;" >
-        <div class="name">
+    <div id="img_text1" style="width: 1190px; height: 500px; background-color: white;" >
+        <div class="t">
             <div>
-                <h3>Answer</h3>
+                <h2>Exam</h2>
              </div>
         </div>
-        <br><br>
+        <br><br><br>
         <div class="container">
             <tr>
                 <td>
                     <table width="100%" border="0">
-                        <tr>
-                            <td class="des2" style="margin: 70px 1px 1px 60px;">
-                                <pre><h3>#include(stdio.h)
-
-int main()
-{
-    while(1){
-    long long int n;
-    
-    scanf("%d", &n);
-    if(n==0)break;
-                                            
-    int arr[100000];
-    long long int j=n, a=0, i;
-        for(i=2;i<=j;){
-            if(j%i==0){
-                if(arr[a-1]!=i){
-                    arr[a]=i;
-                    a++;
-                }
-                j=j/i;
-            }
-            else{
-                i++;
-            }
-        }
-                                            
-        printf("%lld : %lld\n", n, a);
-    }
-    return 0;
-}  
-                                                                            </h3></pre></td>
+                        <tr style="background-color: rgb(245, 245, 245);">
+                            <td width="50" align="center" class="sub02" style="padding: 3px"><h4>#</h4></td>
+                            <td width="250" align="left" class="sub02" style="padding: 3px"><h4>題目名稱</h4></td>
+                            <td width="150" align="left" class="sub02" style="padding: 3px"><h4>等級</h4></td>
+                            <td width="150" align="left" class="sub02" style="padding: 3px"><h4>分數</h4></td>
+                            <td width="150" align="left" class="sub02" style="padding: 3px"><h4>完成度</h4></td>
                         </tr>
                     </table>
                 </td>
             </tr>
-        </div>    
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td width="50" align="center" class="sub02" style="padding: 5px"><h4>1</h4></td>
+                            <td width="250" align="left" class="sub02" style="padding: 5px"><a  href="Cm to m.html"><h4>Cm to m</h4></a></td>
+                            <td width="150" align="left" class="sub02" style="padding: 5px"><h4>Low</h4></td>
+                            <td width="150" align="left" class="sub02" style="padding: 5px"><h4>3</h4></td>
+                            <td width="150" align="left" class="sub02" style="padding: 5px"><h4 style="color: chartreuse;">CORRECT</h4></td>
+                        </tr>
+                        <tr>
+                            <td width="50" align="center" class="sub02" style="padding: 5px"><h4>2</h4></td>
+                            <td width="250" align="left" class="sub02" style="padding: 5px"><a  href="Count the factors.html"><h4>Count the factors</h4></a></td>
+                            <td width="150" align="left" class="sub02" style="padding: 5px"><h4>Mid</h4></td>
+                            <td width="150" align="left" class="sub02" style="padding: 5px"><h4>5</h4></td>
+                            <td width="150" align="left" class="sub02" style="padding: 5px"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </div> 
     </div>
     <div id="img_text2" style="width: 270px; height: 500px; background-color: white; position: fixed; right: 0;" >
         <div class="container">
